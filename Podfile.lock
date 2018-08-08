@@ -1,0 +1,29 @@
+PODS:
+  - Crashlytics (3.10.5):
+    - Fabric (~> 1.7.9)
+  - Fabric (1.7.9)
+  - PureLayout (3.0.2)
+  - Reusable (4.0.0):
+    - Reusable/Storyboard (= 4.0.0)
+    - Reusable/View (= 4.0.0)
+  - Reusable/Storyboard (4.0.0)
+  - Reusable/View (4.0.0)
+  - SwiftSoup (1.5.8)
+
+DEPENDENCIES:
+  - Crashlytics
+  - Fabric
+  - PureLayout
+  - Reusable
+  - SwiftSoup
+
+SPEC CHECKSUMS:
+  Crashlytics: 7f2e38d302d9da96475b3d64d86fb29e31a542b7
+  Fabric: a2917d3895e4c1569b9c3170de7320ea1b1e6661
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  Reusable: 98e5fff1e0e2e00872199699b276dde08ee56c07
+  SwiftSoup: 86a1f5ad07b7e3d14ab1a9324a58c75ae2215e79
+
+PODFILE CHECKSUM: 9879774db67ca82405630ee7fc870f08793afc4f
+
+COCOAPODS: 1.4.0

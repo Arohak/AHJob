@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1148483D1A9F3A147CD20617 /* Pods_AHJob.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B96A1DA772F982D146368E2E /* Pods_AHJob.framework */; };
+		524CBA2B1FCB132700334222 /* JobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524CBA1C1FCB132700334222 /* JobCell.swift */; };
+		524CBA2C1FCB132700334222 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524CBA1F1FCB132700334222 /* Job.swift */; };
+		524CBA2D1FCB132700334222 /* JobsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524CBA211FCB132700334222 /* JobsViewController.swift */; };
+		524CBA2F1FCB132700334222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524CBA241FCB132700334222 /* Assets.xcassets */; };
+		524CBA321FCB132700334222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524CBA281FCB132700334222 /* AppDelegate.swift */; };
+		524CBA351FCB135D00334222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524CBA331FCB135D00334222 /* Main.storyboard */; };
+		524CBA361FCB135D00334222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524CBA341FCB135D00334222 /* LaunchScreen.storyboard */; };
+		524CBA391FCB155D00334222 /* HTTPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524CBA381FCB155C00334222 /* HTTPHelper.swift */; };
+		524CBA3B1FCB269200334222 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524CBA3A1FCB269200334222 /* CustomCell.swift */; };
+		52F6F1D61FD72C9F00576993 /* GCDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6F1D51FD72C9F00576993 /* GCDHelper.swift */; };
+		52F6F1D81FD7322300576993 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6F1D71FD7322300576993 /* DataSource.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		328D0C65B67D5ADC1C72605C /* Pods-AHJob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHJob.release.xcconfig"; path = "Pods/Target Support Files/Pods-AHJob/Pods-AHJob.release.xcconfig"; sourceTree = "<group>"; };
+		524CB9F81FCB07C000334222 /* AHJob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AHJob.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		524CBA1C1FCB132700334222 /* JobCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobCell.swift; sourceTree = "<group>"; };
+		524CBA1F1FCB132700334222 /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		524CBA211FCB132700334222 /* JobsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobsViewController.swift; sourceTree = "<group>"; };
+		524CBA241FCB132700334222 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		524CBA261FCB132700334222 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		524CBA281FCB132700334222 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		524CBA331FCB135D00334222 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		524CBA341FCB135D00334222 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		524CBA381FCB155C00334222 /* HTTPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHelper.swift; sourceTree = "<group>"; };
+		524CBA3A1FCB269200334222 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		52F6F1D51FD72C9F00576993 /* GCDHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDHelper.swift; sourceTree = "<group>"; };
+		52F6F1D71FD7322300576993 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		6AD38C7948242DBA0067DE37 /* Pods-AHJob.ad hoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHJob.ad hoc.xcconfig"; path = "Pods/Target Support Files/Pods-AHJob/Pods-AHJob.ad hoc.xcconfig"; sourceTree = "<group>"; };
+		7A5B1D11CA917DEDA2D965DC /* Pods-AHJob.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHJob.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AHJob/Pods-AHJob.debug.xcconfig"; sourceTree = "<group>"; };
+		B96A1DA772F982D146368E2E /* Pods_AHJob.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHJob.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		524CB9F51FCB07C000334222 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1148483D1A9F3A147CD20617 /* Pods_AHJob.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13E9318AC33858048E3179A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B96A1DA772F982D146368E2E /* Pods_AHJob.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D04824521668510A562C310 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A5B1D11CA917DEDA2D965DC /* Pods-AHJob.debug.xcconfig */,
+				328D0C65B67D5ADC1C72605C /* Pods-AHJob.release.xcconfig */,
+				6AD38C7948242DBA0067DE37 /* Pods-AHJob.ad hoc.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		524CB9EF1FCB07C000334222 = {
+			isa = PBXGroup;
+			children = (
+				524CBA171FCB132700334222 /* AHJob */,
+				524CB9F91FCB07C000334222 /* Products */,
+				1D04824521668510A562C310 /* Pods */,
+				13E9318AC33858048E3179A9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		524CB9F91FCB07C000334222 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				524CB9F81FCB07C000334222 /* AHJob.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		524CBA171FCB132700334222 /* AHJob */ = {
+			isa = PBXGroup;
+			children = (
+				524CBA271FCB132700334222 /* Application */,
+				524CBA201FCB132700334222 /* ViewControllers */,
+				524CBA1B1FCB132700334222 /* Cells */,
+				524CBA1E1FCB132700334222 /* Models */,
+				524CBA371FCB155C00334222 /* Helpers */,
+				524CBA221FCB132700334222 /* Supporting Files */,
+			);
+			path = AHJob;
+			sourceTree = "<group>";
+		};
+		524CBA1B1FCB132700334222 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				524CBA1C1FCB132700334222 /* JobCell.swift */,
+				524CBA3A1FCB269200334222 /* CustomCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		524CBA1E1FCB132700334222 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				524CBA1F1FCB132700334222 /* Job.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		524CBA201FCB132700334222 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				524CBA211FCB132700334222 /* JobsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		524CBA221FCB132700334222 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				524CBA261FCB132700334222 /* Info.plist */,
+				524CBA241FCB132700334222 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		524CBA271FCB132700334222 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				524CBA281FCB132700334222 /* AppDelegate.swift */,
+				524CBA331FCB135D00334222 /* Main.storyboard */,
+				524CBA341FCB135D00334222 /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		524CBA371FCB155C00334222 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				524CBA381FCB155C00334222 /* HTTPHelper.swift */,
+				52F6F1D51FD72C9F00576993 /* GCDHelper.swift */,
+				52F6F1D71FD7322300576993 /* DataSource.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		524CB9F71FCB07C000334222 /* AHJob */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 524CBA0A1FCB07C000334222 /* Build configuration list for PBXNativeTarget "AHJob" */;
+			buildPhases = (
+				FEA4912A63072F82818FC42C /* [CP] Check Pods Manifest.lock */,
+				524CB9F41FCB07C000334222 /* Sources */,
+				524CB9F51FCB07C000334222 /* Frameworks */,
+				524CB9F61FCB07C000334222 /* Resources */,
+				D1CB27C514BA5364DA7253C1 /* [CP] Embed Pods Frameworks */,
+				52A83EA3211B7D5B000D82E7 /* ShellScript */,
+				3622256F26482520EB514761 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AHJob;
+			productName = AHJob;
+			productReference = 524CB9F81FCB07C000334222 /* AHJob.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		524CB9F01FCB07C000334222 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Ara Hakobyan";
+				TargetAttributes = {
+					524CB9F71FCB07C000334222 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 524CB9F31FCB07C000334222 /* Build configuration list for PBXProject "AHJob" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 524CB9EF1FCB07C000334222;
+			productRefGroup = 524CB9F91FCB07C000334222 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				524CB9F71FCB07C000334222 /* AHJob */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		524CB9F61FCB07C000334222 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				524CBA351FCB135D00334222 /* Main.storyboard in Resources */,
+				524CBA361FCB135D00334222 /* LaunchScreen.storyboard in Resources */,
+				524CBA2F1FCB132700334222 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3622256F26482520EB514761 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AHJob/Pods-AHJob-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52A83EA3211B7D5B000D82E7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" d1f7fd930377c1ba3e8e9162c0b0c9c023f742bb 86eebe4aafdb4b681e00c4a1379ec7a2bec4eedc30133ba1f5cfce820db291be";
+		};
+		D1CB27C514BA5364DA7253C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AHJob/Pods-AHJob-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AHJob/Pods-AHJob-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEA4912A63072F82818FC42C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AHJob-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		524CB9F41FCB07C000334222 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				524CBA321FCB132700334222 /* AppDelegate.swift in Sources */,
+				524CBA391FCB155D00334222 /* HTTPHelper.swift in Sources */,
+				524CBA2B1FCB132700334222 /* JobCell.swift in Sources */,
+				524CBA2D1FCB132700334222 /* JobsViewController.swift in Sources */,
+				524CBA3B1FCB269200334222 /* CustomCell.swift in Sources */,
+				524CBA2C1FCB132700334222 /* Job.swift in Sources */,
+				52F6F1D81FD7322300576993 /* DataSource.swift in Sources */,
+				52F6F1D61FD72C9F00576993 /* GCDHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		524CBA081FCB07C000334222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		524CBA091FCB07C000334222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		524CBA0B1FCB07C000334222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A5B1D11CA917DEDA2D965DC /* Pods-AHJob.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WK8C7HUHMZ;
+				INFOPLIST_FILE = "$(SRCROOT)/AHJob/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arohak.AHJob;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c1fe3456-cfee-4e8d-bf3e-c8cf50a117f8";
+				PROVISIONING_PROFILE_SPECIFIER = "AHJob Ad-Hoc";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		524CBA0C1FCB07C000334222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 328D0C65B67D5ADC1C72605C /* Pods-AHJob.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WK8C7HUHMZ;
+				INFOPLIST_FILE = "$(SRCROOT)/AHJob/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arohak.AHJob;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "06fb6bdd-974a-428d-9fad-0e142df90bfc";
+				PROVISIONING_PROFILE_SPECIFIER = "AHJob Distribution";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52A83EA4211B840E000D82E7 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Ad Hoc";
+		};
+		52A83EA5211B840E000D82E7 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AD38C7948242DBA0067DE37 /* Pods-AHJob.ad hoc.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WK8C7HUHMZ;
+				INFOPLIST_FILE = "$(SRCROOT)/AHJob/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arohak.AHJob;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c1fe3456-cfee-4e8d-bf3e-c8cf50a117f8";
+				PROVISIONING_PROFILE_SPECIFIER = "AHJob Ad-Hoc";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Ad Hoc";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		524CB9F31FCB07C000334222 /* Build configuration list for PBXProject "AHJob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				524CBA081FCB07C000334222 /* Debug */,
+				524CBA091FCB07C000334222 /* Release */,
+				52A83EA4211B840E000D82E7 /* Ad Hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		524CBA0A1FCB07C000334222 /* Build configuration list for PBXNativeTarget "AHJob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				524CBA0B1FCB07C000334222 /* Debug */,
+				524CBA0C1FCB07C000334222 /* Release */,
+				52A83EA5211B840E000D82E7 /* Ad Hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 524CB9F01FCB07C000334222 /* Project object */;
+}
