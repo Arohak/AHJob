@@ -1,0 +1,35 @@
+stages:
+  # - test
+  - archive
+
+before_script:
+    - pod install --repo-update
+
+archive_project:
+  stage: archive
+  script:
+    - xcodebuild clean -project AHJob.xcodeproj -scheme AHJob | xcpretty
+    - xcodebuild -workspace AHJob.xcworkspace -scheme AHJob archive -archivePath build/App.xcarchive | xcpretty
+  only:
+    - master
+    - triggers
+    - web
+  artifacts:
+    paths:
+    - build/AHJob.xcarchive
+  tags:
+    - xcode_9-4
+    - osx_10-13
+    - cocoapods
+    - fastlane
+
+# test_project:
+#   stage: test
+#   script:
+#     - xcodebuild test  -workspace AHJob.xcworkspace -scheme AHJob -destination 'platform=iOS Simulator,name=iPhone 8,OS=11.4' | xcpretty
+#   tags:
+#     - xcode_9-4
+#     - osx_10-13
+#     - cocoapods
+#     - fastlane
+

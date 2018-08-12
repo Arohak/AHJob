@@ -35,7 +35,7 @@ platform :ios do
   end
 
   # used to upload builds to fabric
-  lane :fabric do |values|
+  lane :beta do |values|
     private_fabric(values)
   end
 

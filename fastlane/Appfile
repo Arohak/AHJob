@@ -10,6 +10,9 @@
 
 # fastlane add_plugin versioning
 
-# fastlane fabric version:4.4.1 build:1
+# export LC_ALL=en_US.UTF-8
+# export LANG=en_US.UTF-8
+# fastlane beta 
+# fastlane beta version:4.4.1 build:1
 # fastlane test username:arayik.hak@gmail.com  
 # fastlane app_store username:arayik.hak@gmail.com version:4.4.1 build:10 

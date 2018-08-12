@@ -1,6 +1,6 @@
 
 app_name                = "AHJob"
-app_path                = "./output"
+app_path                = "./build"
 ipa_name                = "#{app_name}.ipa"
 plist_path              = "./#{app_name}/Supporting Files/Info.plist"
 bundle_short_version    = "CFBundleShortVersionString"
@@ -31,7 +31,6 @@ private_lane :private_fabric do |values|
     crashlytics(
         api_token:      api_token,
         build_secret:   build_secret,
-        emails:         ['ara.hak.25@gmail.com']
     )   
     
     upload_symbols_to_crashlytics(
@@ -39,7 +38,7 @@ private_lane :private_fabric do |values|
         api_token: api_token
     )
 
-    notify_slack(message: "The build has been uploaded to the Fabric!")
+    notify_slack(message: "The build has been uploaded to the Fabric! See it at https://fabric.io/_/beta")
 end
 
 private_lane :private_testflight do |values|

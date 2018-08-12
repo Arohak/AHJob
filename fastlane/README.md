@@ -26,9 +26,9 @@ fastlane ios app
 fastlane ios tmp_slack
 ```
 
-### ios fabric
+### ios beta
 ```
-fastlane ios fabric
+fastlane ios beta
 ```
 
 ### ios test
